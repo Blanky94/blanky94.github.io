@@ -234,7 +234,7 @@ body {
 }
 .text-box h1 {
   font-family: 'Bai Jamjuree', 'Raleway', sans-serif;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 4.7rem;
   line-height: 1em;
   margin: 0;
@@ -257,7 +257,7 @@ body {
   background-color: white;
   color: black;
   text-align: center;
-
+  transition: all .5s ease-in-out;
 }
 .button:hover {
   transform: scale(1.05);
@@ -304,12 +304,54 @@ body {
 }
 #scroll {
   width: 50px;
+  animation-delay: 1.8s;
 }
 
 #main {
   text-align: left;
   background: white;
+
 }
+.main-div {
+  height: 500px;
+  margin-top: 70px;
+  clip-path: polygon(
+    0 10%, /* left top */
+    0 100%, /* right top */
+    100% 90%, /* right bottom */
+    100% 0 /* left bottom */
+  );
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-column-gap: 4%;
+}
+
+.text-column {
+}
+.text-column h2 {
+  font-size: 2rem;
+}
+.text-column p {
+  line-height: 23px;
+
+  margin: 0px;
+}
+.left {
+  padding: 50px 0px 50px 150px;
+}
+.right {
+  padding: 50px 150px 50px 0px;
+}
+
+.image-column {
+  overflow: hidden;
+}
+.image-column img {
+  width: 900px;
+  margin-top:-50px;
+  margin-left: -70px;
+}
+
 
 .aside-1 {
   background: gold;
@@ -320,8 +362,27 @@ body {
 }
 
 .footer {
+  margin-top: 70px;
   background: rgb(21, 97, 134);
+  height: 200px;
+  padding: 50px;
   color: white;
+  text-align: center;
+  clip-path: polygon(
+    0 20%, /* left top */
+    0 100%, /* right top */
+    100% 100%, /* right bottom */
+    100% 0 /* left bottom */
+  );
+}
+
+.footer p {
+  margin: 0px;
+  padding: 10px;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
 }
 
 @media all and (min-width: 600px) {
