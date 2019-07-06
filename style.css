@@ -583,7 +583,7 @@ input[type=submit]:hover {
   }
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 420px) {
   #square {
     transform: skewX(10deg);
     width: 100%;
@@ -611,7 +611,7 @@ input[type=submit]:hover {
   }
   .main-div {
     margin-top: 10px;
-    grid-template-rows: 600px 200px 400px 200px;
+    grid-template-rows: 500px 200px 400px 200px;
   }
   .text-column h2 {
     font-size: 1.2em;
@@ -620,7 +620,7 @@ input[type=submit]:hover {
     font-size: 0.8em;
   }
   .image-column img {
-    width: 400px;
+    width: 500px;
   }
   .card {
     padding: 5px;
