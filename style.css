@@ -3,6 +3,14 @@
 @import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree&display=swap');
 @import "compass/css3";
 
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+@-ms-viewport {
+  width: device-width ;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
