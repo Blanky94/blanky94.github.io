@@ -582,3 +582,26 @@ input[type=submit]:hover {
     font-size: 0.7em;
   }
 }
+
+@media all and (max-width: 400px) {
+  .square {
+    transform: skewX(15deg);
+    width: 100%;
+  }
+  .text-box {
+    width: 90%;
+  }
+
+  .text-box h2 {
+    font-size: 1.2em;
+  }
+  .text-box p {
+    font-size: 0.8em;
+  }
+  .text-column h2 {
+    font-size: 1.2em;
+  }
+  .text-column p {
+    font-size: 0.8em;
+  }
+}
