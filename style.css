@@ -613,11 +613,15 @@ input[type=submit]:hover {
   }
   .arrow {
     margin: 0;
-    width: 25px;
-    height: 50px;
+    width: 30px;
+    height: 55px;
     background: url(Images/down.png)50% 50% no-repeat;
-    background-size: 30px;
+    background-size: 35px;
     margin-left: 10px;
+  }
+  .arrow a {
+    height: 55px;
+    width: 30px;
   }
 
   .footer p {
