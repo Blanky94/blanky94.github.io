@@ -584,24 +584,54 @@ input[type=submit]:hover {
 }
 
 @media all and (max-width: 400px) {
-  .square {
+  #square {
     transform: skewX(15deg);
     width: 100%;
+    margin-left: -10px;
+  }
+  .button {
+    width: 150px;
+    height: 30px;
+    margin-top: 3px;
+    padding: 7px;
   }
   .text-box {
-    width: 90%;
+    width: 95%;
   }
 
-  .text-box h2 {
-    font-size: 1.2em;
+  .text-box h1 {
+    font-size: 1.5em;
   }
   .text-box p {
+    margin-top: 3px;
     font-size: 0.8em;
+  }
+  .text-box a {
+    font-size: 0.8em;
+  }
+  .main-div {
+    margin-top: 10px;
+    grid-template-rows: 500px 200px 400px 200px;
   }
   .text-column h2 {
     font-size: 1.2em;
   }
   .text-column p {
     font-size: 0.8em;
+  }
+  .image-column img {
+    width: 500px;
+  }
+  .card {
+    padding: 5px;
+  }
+  .card h2 {
+    font-size: 1.2em;
+  }
+  .card p {
+    font-size: 0.8em;
+  }
+  .footer p {
+    font-size: 0.4em;
   }
 }
