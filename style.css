@@ -498,7 +498,44 @@ input[type=submit]:hover {
 }
 
 @media all and (max-width: 800px) {
-
+  .main-div {
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-column-gap: 0%;
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-row-gap: 50px;
+  }
+  .left {
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .right {
+    padding-left: 30px;
+    padding-right: 30px;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  .bottom-div {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    grid-template-columns: 100%;
+    grid-column-gap: 0%;
+    grid-template-rows: 220px 220px;
+    grid-row-gap: 50px;
+  }
+  .top-card {
+    grid-row: 1 / 2;
+  }
+  .bot-card {
+    grid-row: 2 / 3;
+  }
+  .footer p {
+    padding: 0px;
+  }
 }
 
 @media all and (max-width: 600px) {
@@ -532,5 +569,8 @@ input[type=submit]:hover {
     padding-top: 0px;
     height: 70vh;
 
+  }
+  .footer p {
+    font-size: 0.7em;
   }
 }
