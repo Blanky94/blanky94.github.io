@@ -478,6 +478,10 @@ input[type=submit]:hover {
   .text-column p {
     font-size: 0.9em;
   }
+  #content-head {
+    height: 600px;
+    align-items: baseline;
+  }
 }
 
 @media all and (max-width: 1000px) {
