@@ -206,10 +206,6 @@ p {
   height: 100%;
   background: linear-gradient(90deg,  rgb(7, 35, 80), 25%, rgb(20, 90, 120) 70%);
 }
-#square span {
-  width: 20%;
-  position:absolute;
-}
 .text-box {
   margin-top: -20px;
   padding-left: 2em;
@@ -299,26 +295,30 @@ p {
 
 }
 .main-div {
-  height: 500px;
+  height: 1100px;
   margin-top: 70px;
-  clip-path: polygon(
-    0 10%, /* left top */
-    0 100%, /* right top */
-    100% 90%, /* right bottom */
-    100% 0 /* left bottom */
-  );
+  transform: skewY(-2deg);
   display: grid;
   grid-template-columns: 48% 48%;
   grid-column-gap: 4%;
+  grid-template-rows: 500px 500px;
+  grid-row-gap: 100px;
 }
 .text-column {
+  transform: skewY(2deg);
 }
 .left {
+  padding-left: 150px;
   text-align: right;
-  padding: 50px 0px 50px 150px;
+  align-self: center;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
 .right {
-  padding: 50px 150px 50px 0px;
+  padding-right: 150px;
+  align-self: center;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }
 .image-column {
   overflow: hidden;
@@ -463,22 +463,42 @@ input[type=submit]:hover {
 
 /*Responsive shit*/
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1250px) {
+  .text-column h2 {
+    font-size: 1.5em;
+  }
+  .text-column p {
+    font-size: 0.9em;
+  }
+}
+
+@media all and (max-width: 1000px) {
   .navigation {
     justify-content: space-around;
   }
-  .square, .square2 {
-    position: absolute;
-    margin: -1000px;
+
+  #square {
+    width: 80%;
   }
 
   .text-box {
-    width: 100%;
+    width: 60%;
     margin: 0;
+    padding: 30px;
+  }
+  .text-box h1 {
+    font-size: 3em;
+  }
+  .text-box p {
+    font-size: 1em;
   }
   #content-head {
     align-items: baseline;
   }
+}
+
+@media all and (max-width: 800px) {
+
 }
 
 @media all and (max-width: 600px) {
