@@ -555,6 +555,31 @@ input[type=submit]:hover {
 }
 
 @media all and (max-width: 600px) {
+  #square {
+    transform: skewX(10deg);
+    width: 100%;
+    margin-left: -50px;
+  }
+  .button {
+    width: 180px;
+    height: 40px;
+    padding: 10px;
+  }
+  .text-box {
+    width: 95%;
+  }
+
+  .text-box h1 {
+    font-size: 2em;
+  }
+  .text-box p {
+    font-size: 1em;
+  }
+  .text-box a {
+    font-size: 1em;
+  }
+
+
   .header {
     position: relative;
     justify-content: center;
@@ -586,6 +611,15 @@ input[type=submit]:hover {
     height: 500px;
 
   }
+  .arrow {
+    margin: 0;
+    width: 25px;
+    height: 50px;
+    background: url(Images/down.png)50% 50% no-repeat;
+    background-size: 30px;
+    margin-left: 10px;
+  }
+
   .footer p {
     font-size: 0.7em;
   }
