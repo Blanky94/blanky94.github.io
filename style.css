@@ -139,13 +139,8 @@ p {
   list-style: none;
   height: 100%;
   margin: 0;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-
-  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
   justify-content: flex-end;
   align-items: center;
 }
@@ -158,6 +153,9 @@ p {
 }
 .navigation a:hover {
   transform: scale(1.1);
+}
+.navigation .icon {
+  display: none;
 }
 
 #content-head {
@@ -598,9 +596,45 @@ input[type=submit]:hover {
   }
   .logo {
     position: absolute;
-    margin: -1000px;
+    left: 30px;
+    z-index: 3;
   }
   .navigation {
+    display: block;
+    padding-top: 6px;
+    width: 100%;
+  }
+  .navigation a {
+    display: none;
+  }
+  .navigation a:hover {
+    transform: none;
+  }
+  .navigation a.icon {
+    padding-top: 19px;
+    float: right;
+    display: block;
+  }
+  .navigation.responsive {
+    position: relative;
+  }
+
+  .navigation.responsive a {
+    width: 100%;
+    background: rgba(255,255,255,0.9);
+    float: right;
+    display: block;
+    text-align: right;
+  }
+  .navigation.responsive a:first-child {
+    margin-top: 64px;
+  }
+  .navigation.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 6px;
+  }
+  /*.navigation {
     width: 100%;
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
@@ -616,7 +650,7 @@ input[type=submit]:hover {
   }
   .navigation li:last-of-type a {
     border-bottom: none;
-  }
+  }*/
 
   #content-head {
     padding-top: 0px;
@@ -647,7 +681,7 @@ input[type=submit]:hover {
   }
 
   .text-box h1 {
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
   .text-box p {
     margin-top: 15px;
@@ -673,10 +707,10 @@ input[type=submit]:hover {
     padding: 5px;
   }
   .card h2 {
-    font-size: 1em;
+    font-size: 1.1em;
   }
   .card p {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
   .footer p {
     font-size: 0.4em;
