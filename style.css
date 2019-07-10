@@ -177,6 +177,9 @@ p {
     100% 0 /* left bottom */
   );
 }
+
+
+
 .wrap-1 {
   max-width: 1500px;
   height: 100%;
@@ -323,6 +326,7 @@ p {
 .right {
   padding-right: 150px;
   align-self: center;
+  text-align: left;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
@@ -338,14 +342,14 @@ p {
 .bottom-div {
   width: 100%;
   margin-top: 190px;
-  margin-bottom: 130px;
+  margin-bottom: 30px;
   display: grid;
   grid-template-columns: 48% 48%;
   grid-column-gap: 4%;
 }
 .card {
   display: grid;
-  grid-template-columns: 25% 70%;
+  grid-template-columns: 30% 65%;
   grid-column-gap: 5%;
   grid-template-rows: 35% 55%;
   grid-row-gap: 10%;
@@ -358,6 +362,7 @@ p {
   height: 250px;
 }
 .card img {
+  border-radius: 50%;
   grid-column: 1;
   grid-row: 1 / 3;
   width: 100%;
@@ -377,7 +382,7 @@ p {
 }
 
 .footer {
-  margin-top: 70px;
+  margin-top: 170px;
   background: linear-gradient(90deg,  rgb(7, 35, 80), 25%, rgb(20, 90, 120) 70%);
   height: 200px;
   padding: 50px;
@@ -404,6 +409,43 @@ p {
 
 
 /*Tutors page*/
+#content-head-tutor {
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  height: 450px;
+  background: url(Images/tutor-page/glasses.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: 0;
+  clip-path: polygon(
+    0 0, /* left top */
+    0 100%, /* right top */
+    100% 82%, /* right bottom */
+    100% 0 /* left bottom */
+  );
+}
+.tutor-heading {
+  margin-top: 170px;
+  z-index: 1;
+  border-radius: 5px;
+  height: auto;
+  background: white;
+}
+.top-tutor-heading {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.experience {
+  position: relative;
+  padding: 40px;
+  background: white;
+  border: 1px solid #eaf0f6;
+}
 .sub-page-wrap {
   margin-top: 70px;
 }
@@ -424,6 +466,26 @@ p {
 
 
 /*contact page*/
+#content-head-contact {
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  height: 450px;
+  background: url(Images/message.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: 0;
+  clip-path: polygon(
+    0 0, /* left top */
+    0 100%, /* right top */
+    100% 82%, /* right bottom */
+    100% 0 /* left bottom */
+  );
+}
+
 
 input[type=text], input[type=email], select, textarea {
   width: 100%;
@@ -480,6 +542,9 @@ input[type=submit]:hover {
     height: 700px;
     align-items: baseline;
   }
+  .card {
+    padding: 15px;
+  }
 }
 
 @media all and (max-width: 1000px) {
@@ -524,12 +589,16 @@ input[type=submit]:hover {
     height: 600px;
 
   }
+
   .main-div {
     height: 100%;
     grid-template-columns: 100%;
     grid-column-gap: 0%;
     grid-template-rows: 300px 300px 300px 300px;
     grid-row-gap: 50px;
+  }
+  .tutor-div {
+    height: auto;
   }
   .left {
     text-align: left;
@@ -553,6 +622,7 @@ input[type=submit]:hover {
     grid-template-rows: 220px 220px;
     grid-row-gap: 50px;
   }
+
   .top-card {
     grid-row: 1 / 2;
   }
@@ -560,6 +630,9 @@ input[type=submit]:hover {
     grid-row: 2 / 3;
   }
   .footer p {
+    padding: 0px;
+  }
+  .top-tutor-heading {
     padding: 0px;
   }
 }
@@ -634,28 +707,16 @@ input[type=submit]:hover {
     right: 0;
     top: 6px;
   }
-  /*.navigation {
-    width: 100%;
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-    padding: 0;
-  }
 
-  .navigation a {
-    width: 100%;
-    text-align: center;
-    padding: 0px 10px 0px 10px;
-    border-top: 1px solid rgba(255,255,255,0.3);
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-  }
-  .navigation li:last-of-type a {
-    border-bottom: none;
-  }*/
 
   #content-head {
     padding-top: 0px;
     height: 500px;
 
+  }
+  #content-head-tutor, #content-head-contact {
+    padding-top: 0px;
+    height: 300px;
   }
 
 
