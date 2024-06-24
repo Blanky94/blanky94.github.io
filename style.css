@@ -174,12 +174,12 @@ ul {
   background-attachment: fixed;
   background-repeat: no-repeat;
   z-index: 0;
-  clip-path: polygon(
+  /*clip-path: polygon(
     0 0, /* left top */
-    0 100%, /* right top */
-    100% 92%, /* right bottom */
-    100% 0 /* left bottom */
-  );
+    /*0 100%, /* right top */
+    /*100% 92%, /* right bottom */
+    /*100% 0 /* left bottom */
+  /*);*/
 }
 
 
@@ -310,7 +310,7 @@ ul {
 .main-div {
   height: 1100px;
   margin-top: 70px;
-  transform: skewY(-2deg);
+  /*transform: skewY(-2deg);*/
   display: grid;
   grid-template-columns: 48% 48%;
   grid-column-gap: 4%;
@@ -318,8 +318,7 @@ ul {
   grid-row-gap: 100px;
 }
 .text-column {
-  transform: skewY(2deg);
-  -webkit-font-smoothing: antialiased;
+  /*transform: skewY(2deg);*/
 }
 .left {
   padding-left: 150px;
@@ -407,12 +406,12 @@ ul {
   padding: 50px;
   color: white;
   text-align: right;
-  clip-path: polygon(
+  /*clip-path: polygon(
     0 20%, /* left top */
-    0 100%, /* right top */
-    100% 100%, /* right bottom */
-    100% 0 /* left bottom */
-  );
+    /*0 100%, /* right top */
+    /*100% 100%, /* right bottom */
+    /*100% 0 /* left bottom */
+  /*);*/
 }
 .footer p {
   margin: 0px;
@@ -441,17 +440,17 @@ ul {
   background-attachment: fixed;
   background-repeat: no-repeat;
   z-index: 0;
-  clip-path: polygon(
+  /*clip-path: polygon(
     0 0, /* left top */
-    0 100%, /* right top */
-    100% 82%, /* right bottom */
-    100% 0 /* left bottom */
-  );
+    /*0 100%, /* right top */
+    /*100% 82%, /* right bottom */
+    /*100% 0 /* left bottom */
+  /*);*/
 }
 .tutor-div {
   height: 800px;
   margin-top: 70px;
-  transform: skewY(-2deg);
+  /*transform: skewY(-2deg);*/
   display: grid;
   grid-template-columns: 48% 48%;
   grid-column-gap: 4%;
@@ -508,12 +507,12 @@ ul {
   background-attachment: fixed;
   background-repeat: no-repeat;
   z-index: 0;
-  clip-path: polygon(
+  /*clip-path: polygon(
     0 0, /* left top */
-    0 100%, /* right top */
-    100% 82%, /* right bottom */
-    100% 0 /* left bottom */
-  );
+    /*0 100%, /* right top */
+    /*100% 82%, /* right bottom */
+    /*100% 0 /* left bottom */
+  /*);*/
 }
 
 
