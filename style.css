@@ -319,6 +319,7 @@ ul {
 }
 .text-column {
   transform: skewY(2deg);
+  -webkit-filter: blur(0.000001px);
 }
 .left {
   padding-left: 150px;
