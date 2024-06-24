@@ -429,6 +429,16 @@ p {
     100% 0 /* left bottom */
   );
 }
+.tutor-div {
+  height: 800px;
+  margin-top: 70px;
+  transform: skewY(-2deg);
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-column-gap: 4%;
+  grid-template-rows: 350px 350px;
+  grid-row-gap: 100px;
+}
 
 .tutor-heading {
   margin-top: 170px;
