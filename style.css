@@ -431,6 +431,7 @@ p {
 }
 .tutor-div {
   height: 700px;
+  grid-template-rows: 300px 300px;
 }
 
 .tutor-heading {
