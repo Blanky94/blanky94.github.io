@@ -770,6 +770,11 @@ input[type=submit]:hover {
     margin-top: 10px;
     grid-template-rows: 500px 200px 400px 200px;
   }
+
+  .tutor-div {
+    margin-top: 0px;
+  }
+
   .text-column h2 {
     font-size: 1.2em;
   }
