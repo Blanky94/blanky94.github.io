@@ -355,6 +355,20 @@ ul {
   display: grid;
   grid-template-columns: 30% 65%;
   grid-column-gap: 5%;
+  grid-template-rows: 35% 55%;
+  grid-row-gap: 10%;
+  padding: 50px;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  background: rgba(20, 90, 120, 0.1);
+  border-radius: 5px;
+  height: 250px;
+}
+.card-tutor {
+  display: grid;
+  grid-template-columns: 30% 65%;
+  grid-column-gap: 5%;
   grid-template-rows: 15% 75%;
   grid-row-gap: 10%;
   padding: 50px;
@@ -365,21 +379,21 @@ ul {
   border-radius: 5px;
   height: 250px;
 }
-.card img {
+.card, .card-tutor img {
   border-radius: 50%;
   grid-column: 1;
   grid-row: 1 / 3;
   width: 100%;
   justify-content: end;
 }
-.card h2 {
+.card, .card-tutor h2 {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   font-size: 1.6em;
   margin: 0;
   align-self: end;
 }
-.card p {
+.card, .card-tutor p {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   align-self: start;
@@ -557,7 +571,7 @@ input[type=submit]:hover {
     height: 700px;
     align-items: baseline;
   }
-  .card {
+  .card, .card-tutor {
     padding: 15px;
   }
 }
@@ -788,13 +802,13 @@ input[type=submit]:hover {
   .image-column img {
     width: 600px;
   }
-  .card {
+  .card, .card-tutor {
     padding: 5px;
   }
-  .card h2 {
+  .card, .card-tutor h2 {
     font-size: 1.1em;
   }
-  .card p {
+  .card, .card-tutor p {
     font-size: 0.8em;
   }
   .footer p {
