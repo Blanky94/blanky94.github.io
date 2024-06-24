@@ -35,6 +35,10 @@ p {
   color: rgb(45, 45, 45);
   margin: 0px;
 }
+
+li {
+  list-style-type: none
+}
 /*Index page*/
 
 .wrapper {
