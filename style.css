@@ -614,6 +614,7 @@ input[type=submit]:hover {
   }
   .tutor-div {
     height: auto;
+    margin-top: 0px;
   }
   .left {
     text-align: left;
