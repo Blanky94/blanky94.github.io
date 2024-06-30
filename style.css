@@ -650,8 +650,8 @@ input[type=submit]:hover {
   }
   .bottom-div {
     width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
     grid-template-columns: 100%;
     grid-column-gap: 0%;
     grid-template-rows: 220px 220px;
