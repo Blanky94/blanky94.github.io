@@ -32,7 +32,7 @@ h2 {
 }
 p {
   line-height: 23px;
-  color: rgb(45, 45, 45);
+  color: black;
   margin: 0px;
 }
 
@@ -317,18 +317,18 @@ ul {
   grid-template-rows: 500px 500px;
   grid-row-gap: 100px;
 }
-.text-column {
-  /*transform: skewY(2deg);*/
-}
+/* .text-column {
+  transform: skewY(2deg);
+} */
 .left {
-  padding-left: 150px;
-  text-align: right;
+  padding-left: 30px;
+  text-align: left;
   align-self: center;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
 .right {
-  padding-right: 150px;
+  padding-right: 30px;
   align-self: center;
   text-align: left;
   grid-column: 2 / 3;
@@ -345,7 +345,7 @@ ul {
 
 .bottom-div {
   width: 100%;
-  margin-top: 190px;
+  margin-top: 130px;
   margin-bottom: 30px;
   display: grid;
   grid-template-columns: 48% 48%;
@@ -400,12 +400,12 @@ ul {
 }
 
 .footer {
-  margin-top: 170px;
+  margin-top: 130px;
   background: linear-gradient(90deg,  rgb(7, 35, 80), 25%, rgb(20, 90, 120) 70%);
   height: 200px;
   padding: 50px;
   color: white;
-  text-align: right;
+  text-align: left;
   /*clip-path: polygon(
     0 20%, /* left top */
     /*0 100%, /* right top */
@@ -623,8 +623,8 @@ input[type=submit]:hover {
     height: 100%;
     grid-template-columns: 100%;
     grid-column-gap: 0%;
-    grid-template-rows: 300px 300px 300px 300px;
-    grid-row-gap: 50px;
+    grid-template-rows: 300px 300px 400px 300px;
+    grid-row-gap: 0px;
   }
   .tutor-div {
     height: auto;
@@ -697,7 +697,7 @@ input[type=submit]:hover {
 
 
   .header {
-    position: relative;
+    position: fixed;
     justify-content: center;
   }
   .logo {
@@ -727,7 +727,7 @@ input[type=submit]:hover {
 
   .navigation.responsive a {
     width: 100%;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,1);
     float: right;
     display: block;
     text-align: right;
@@ -766,7 +766,7 @@ input[type=submit]:hover {
   }
   .button {
     width: 150px;
-    height: 30px;
+    height: 35px;
     margin-top: 15px;
     padding: 7px;
   }
@@ -775,18 +775,19 @@ input[type=submit]:hover {
   }
 
   .text-box h1 {
-    font-size: 1.6em;
+    font-size: 2em;
   }
   .text-box p {
     margin-top: 15px;
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .text-box a {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
   .main-div {
     margin-top: 10px;
-    grid-template-rows: 500px 200px 400px 200px;
+    grid-template-rows: 400px 200px 400px 200px;
+    grid-row-gap: 0px;
   }
 
   .tutor-div {
@@ -794,10 +795,10 @@ input[type=submit]:hover {
   }
 
   .text-column h2 {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
   .text-column p {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .image-column img {
     width: 600px;
@@ -806,12 +807,12 @@ input[type=submit]:hover {
     padding: 5px;
   }
   .card h2, .card-tutor h2 {
-    font-size: 1.1em;
+    font-size: 1.5em;
   }
   .card p, .card-tutor p {
-    font-size: 0.8em;
+    font-size: 1em;
   }
-  .footer p {
+  /* .footer p {
     font-size: 0.4em;
-  }
+  } */
 }
