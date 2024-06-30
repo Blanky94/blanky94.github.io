@@ -743,9 +743,8 @@ input[type=submit]:hover {
 
 
   #content-head {
-    padding-top: 0px;
+    /* padding-top: 0px; */
     height: 500px;
-
   }
   #content-head-tutor, #content-head-contact {
     padding-top: 0px;
@@ -786,7 +785,7 @@ input[type=submit]:hover {
   }
   .main-div {
     margin-top: 10px;
-    grid-template-rows: 400px 200px 400px 200px;
+    grid-template-rows: 450px 200px 500px 200px;
     grid-row-gap: 0px;
   }
 
@@ -799,6 +798,7 @@ input[type=submit]:hover {
   }
   .text-column p {
     font-size: 1em;
+    margin-bottom: 20px;
   }
   .image-column img {
     width: 600px;
@@ -810,7 +810,7 @@ input[type=submit]:hover {
     font-size: 1.5em;
   }
   .card p, .card-tutor p {
-    font-size: 1em;
+    font-size: 0.93em;
   }
   /* .footer p {
     font-size: 0.4em;
