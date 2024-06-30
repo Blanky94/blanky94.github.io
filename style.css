@@ -475,9 +475,9 @@ ul {
   background: white;
   border: 1px solid #eaf0f6;
 }
-.sub-page-wrap {
+/* .sub-page-wrap {
   margin-top: 70px;
-}
+} */
 
 .profiles-section {
   display: flex;
@@ -787,7 +787,7 @@ input[type=submit]:hover {
   }
   .main-div {
     margin-top: 10px;
-    grid-template-rows: 450px 200px 500px 200px;
+    grid-template-rows: 500px 200px 500px 200px;
     grid-row-gap: 0px;
   }
 
