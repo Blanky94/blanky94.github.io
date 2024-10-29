@@ -515,6 +515,17 @@ ul {
   /*);*/
 }
 
+.wace-div {
+  height: 300px;
+  margin-top: 70px;
+  /*transform: skewY(-2deg);*/
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-column-gap: 4%;
+  grid-template-rows: 350px 350px;
+  grid-row-gap: 100px;
+}
+
 
 input[type=text], input[type=email], select, textarea {
   width: 100%;
