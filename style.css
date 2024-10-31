@@ -638,10 +638,11 @@ input[type=submit]:hover {
   }
 
   .wace-div {
+    margin-top: 0;
     height: 100%;
     grid-template-columns: 100%;
     grid-column-gap: 0%;
-    grid-template-rows: 300px 300px;
+    grid-template-rows: 400px 300px;
     grid-row-gap: 0px;
   }
 
