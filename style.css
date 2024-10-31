@@ -526,7 +526,6 @@ ul {
   grid-row-gap: 100px;
 }
 
-
 input[type=text], input[type=email], select, textarea {
   width: 100%;
   padding: 12px;
@@ -637,6 +636,15 @@ input[type=submit]:hover {
     grid-template-rows: 300px 300px 400px 300px;
     grid-row-gap: 0px;
   }
+
+  .wace-div {
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-column-gap: 0%;
+    grid-template-rows: 300px 300px;
+    grid-row-gap: 0px;
+  }
+
   .tutor-div {
     height: auto;
     margin-top: 0px;
@@ -799,6 +807,12 @@ input[type=submit]:hover {
   .main-div {
     margin-top: 10px;
     grid-template-rows: 500px 200px 500px 200px;
+    grid-row-gap: 0px;
+  }
+
+  .wace-div {
+    margin-top: 0px;
+    grid-template-rows: 500px 200px;
     grid-row-gap: 0px;
   }
 
